@@ -2,14 +2,26 @@
 using System.Linq;
 using System.ComponentModel;
 using System.Collections.Generic;
-using Windows.UI;
 using Windows.Foundation;
+#if WinUI
+using Microsoft.UI;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Data;
+using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Shapes;
+using WindowsLinesegment = Microsoft.UI.Xaml.Media.LineSegment;
+
+#else
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Shapes;
 using WindowsLinesegment = Windows.UI.Xaml.Media.LineSegment;
+
+#endif
 
 namespace Syncfusion.UI.Xaml.Charts
 {

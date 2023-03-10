@@ -4,7 +4,11 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using Windows.Foundation;
+#if WinUI
+using Microsoft.UI.Xaml.Controls;
+#else
 using Windows.UI.Xaml.Controls;
+#endif
 
 namespace Syncfusion.UI.Xaml.Charts
 {

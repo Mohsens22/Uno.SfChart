@@ -1,11 +1,21 @@
 ﻿using System;
 using Windows.Foundation;
+#if WinUI
+using Microsoft.UI.Text;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Data;
+using Microsoft.UI.Xaml.Media;
+using Microsoft.UI;
+#else
 using Windows.UI.Text;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Media;
 using Windows.UI;
+#endif
+
 
 namespace Syncfusion.UI.Xaml.Charts
 {

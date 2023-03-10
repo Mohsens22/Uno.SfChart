@@ -3,17 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Collections;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+using Windows.Foundation;
 using Windows.ApplicationModel;
-using Windows.UI;
 using Windows.UI.Core;
+#if WinUI
+using Microsoft.UI;
+using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Markup;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Input;
+using Microsoft.UI.Xaml.Data;
+#else
+using Windows.UI;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Markup;
-using Windows.Foundation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using System.Collections.Specialized;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Data;
+#endif
 
 namespace Syncfusion.UI.Xaml.Charts
 {

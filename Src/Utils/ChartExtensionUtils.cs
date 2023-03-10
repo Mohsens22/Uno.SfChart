@@ -3,13 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Shapes;
 using System.Threading.Tasks;
 using System.Reflection;
 using Windows.Foundation;
+#if WinUI
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Shapes;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media;
+#else
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Shapes;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
+#endif
 
 namespace Syncfusion.UI.Xaml.Charts
 {

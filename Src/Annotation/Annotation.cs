@@ -10,12 +10,21 @@ namespace Syncfusion.UI.Xaml.Charts
     using System;
     using System.Diagnostics.CodeAnalysis;
     using Windows.Foundation;
+#if WinUI
+    using Microsoft.UI.Text;
+    using Microsoft.UI.Xaml;
+    using Microsoft.UI.Xaml.Controls;
+    using Microsoft.UI.Xaml.Data;
+    using Microsoft.UI.Xaml.Input;
+    using Microsoft.UI.Xaml.Media;
+#else
     using Windows.UI.Text;
     using Windows.UI.Xaml;
     using Windows.UI.Xaml.Controls;
     using Windows.UI.Xaml.Data;
     using Windows.UI.Xaml.Input;
     using Windows.UI.Xaml.Media;
+#endif
 
     /// <summary>
     /// Provides a lightweight control for displaying overlay element in <see cref="SfChart"/>.

@@ -7,7 +7,11 @@
 // </copyright>
 namespace Syncfusion.UI.Xaml.Charts
 {
+#if WinUI
+    using Microsoft.UI.Xaml;
+#else
     using Windows.UI.Xaml;
+#endif
 
     /// <summary>
     /// Represents the <see cref="AnnotationResizer"/> class.

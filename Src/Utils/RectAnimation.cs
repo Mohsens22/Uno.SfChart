@@ -9,6 +9,11 @@ using Windows.UI.Xaml;
 using Windows.Foundation;
 using Windows.UI.Xaml.Media;
 using System.Threading.Tasks;
+#elif WinUI
+using Microsoft.UI.Xaml;
+using Windows.Foundation;
+using Microsoft.UI.Xaml.Media;
+using System.Threading.Tasks;
 #else
 using System.Windows.Media;
 using System.Windows.Threading;

@@ -6,8 +6,13 @@ using System.Threading;
 using System.Collections.Specialized;
 using System.Collections.ObjectModel;
 using Windows.Foundation;
+#if WinUI
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+#else
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+#endif
 
 namespace Syncfusion.UI.Xaml.Charts
 {

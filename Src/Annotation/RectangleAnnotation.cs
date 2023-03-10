@@ -1,6 +1,11 @@
 ﻿using System.Windows;
+#if WinUI
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Shapes;
+#else
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Shapes;
+#endif
 
 namespace Syncfusion.UI.Xaml.Charts
 {

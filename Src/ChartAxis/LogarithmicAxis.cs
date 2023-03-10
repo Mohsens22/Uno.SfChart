@@ -5,8 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using Windows.Foundation;
+#if WinUI
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+#else
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+
+#endif
 
 namespace Syncfusion.UI.Xaml.Charts
 {

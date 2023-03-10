@@ -8,17 +8,27 @@ using System.Text;
 using System.Xml;
 using System.Collections.Specialized;
 using System.ComponentModel;
-using Windows.UI;
+using System.Threading.Tasks;
 using Windows.Foundation;
+using Windows.Data.Xml.Dom;
+using Windows.ApplicationModel;
+#if WinUI
+using Microsoft.UI;
+using Microsoft.UI.Xaml.Data;
+using Microsoft.UI.Text;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Shapes;
+#else
+using Windows.UI;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Text;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Shapes;
-using Windows.Data.Xml.Dom;
-using System.Threading.Tasks;
-using Windows.ApplicationModel;
+#endif
 
 namespace Syncfusion.UI.Xaml.Charts
 {
